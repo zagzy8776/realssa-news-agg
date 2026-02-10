@@ -17,7 +17,7 @@ RUN wget https://raw.githubusercontent.com/yhirose/cpp-httplib/master/httplib.h
 COPY realssa_news_linux.cpp .
 
 # Compile
-RUN g++ -std=c++17 -pthread -o realssa_news realssa_news_linux.cpp -lcurl
+RUN g++ -std=c++17 -pthread -o realssa_news realssa_news_linux.cpp -lcurl -lssl -lcrypto
 
 # Expose port
 EXPOSE 3000
