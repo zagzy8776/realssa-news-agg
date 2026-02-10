@@ -13,10 +13,10 @@ WORKDIR /app
 RUN wget https://raw.githubusercontent.com/yhirose/cpp-httplib/master/httplib.h
 
 # Copy source code
-COPY realssa_news_linux.cpp .
+COPY realssa_news.cpp .
 
 # Compile
-RUN g++ -std=c++17 -pthread -o realssa_news realssa_news_linux.cpp -lcurl
+RUN g++ -std=c++17 -pthread -o realssa_news realssa_news.cpp -lcurl
 
 # Expose port
 EXPOSE 3000
