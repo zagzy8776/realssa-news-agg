@@ -1,0 +1,13 @@
+.vs/
+x64/
+Debug/
+Release/
+*.exe
+*.obj
+*.pdb
+node_modules/
+.next/
+out/
+.DS_Store
+Thumbs.db
+public/data/news_feed.json
